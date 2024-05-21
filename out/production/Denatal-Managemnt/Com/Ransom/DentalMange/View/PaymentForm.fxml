@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentcontext" prefHeight="626.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Com.Ransom.DentalMange.Controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="636.0" fitWidth="770.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/DentalBg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="264.0" layoutY="33.0" />
+      <Label layoutX="237.0" layoutY="31.0" text="Dental Payment Form" textFill="#3b08f5">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nametxt" layoutX="117.0" layoutY="103.0" prefHeight="31.0" prefWidth="337.0" promptText="Name" />
+      <TextField fx:id="homephonetxt" layoutX="116.0" layoutY="153.0" prefHeight="31.0" prefWidth="337.0" promptText="Home Phone" />
+      <TextField fx:id="addresstxt" layoutX="116.0" layoutY="209.0" prefHeight="31.0" prefWidth="337.0" promptText="Address" />
+      <TextField fx:id="postaltxt" layoutX="116.0" layoutY="265.0" prefHeight="31.0" prefWidth="337.0" promptText="Postal code" />
+      <TextField fx:id="cardnumbertxt" layoutX="113.0" layoutY="326.0" prefHeight="31.0" prefWidth="344.0" promptText="Card Number" />
+      <Button layoutX="117.0" layoutY="405.0" mnemonicParsing="false" onAction="#PayOnAction" prefHeight="31.0" prefWidth="66.0" text="pay" textFill="#0925f8">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="265.0" layoutX="237.0" layoutY="384.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/payment.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="39.0" layoutY="39.0" mnemonicParsing="false" onAction="#backtodashboardOnAction" text="Back To Dashboard" textFill="#eb0a0a" />
+   </children>
+</AnchorPane>
